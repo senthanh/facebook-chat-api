@@ -182,7 +182,7 @@ module.exports = function(defaultFuncs, api, ctx) {
       sendContent(
         form,
         threadID,
-        threadID.length === 15,
+        threadID.length <= 15,
         messageAndOTID,
         callback
       );
